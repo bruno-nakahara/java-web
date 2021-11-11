@@ -1,0 +1,25 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+}
+
+form table tr {
+	width: 940px;
+	
+}
+
+form table tr td input {
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+form table tr td input.botao {
+	width: 100px;
+	height: 40px;
+	padding: 4px;
+	background: #90EE90;	
+}
