@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<form action="">
+		<form action="" method="post" onsubmit="return validarDados()? true : false">
 			<table>
 				<tr>
 					<td>
@@ -40,5 +40,29 @@
 				
 			</table>
 		</form>
+		
+		<script type="text/javascript">
+			function validarDados() {
+				const nome = document.getElementById("nome").value
+				const login = document.getElementById("login").value
+				const senha = document.getElementById("senha").value
+
+				if (!nome) {
+					alert("Informe o nome")
+
+					return false
+				} else if (!login) {
+					alert("Informe o login")
+
+					return false
+				} else if (!senha) {
+					alert("Informe a senha")
+
+					return false
+				}
+
+				return true
+			}
+		</script>
 	</body>
 </html>
